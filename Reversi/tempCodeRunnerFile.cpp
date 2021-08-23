@@ -1,1 +1,0 @@
-turn == 1 ? grid[i][j].can_for_d_black[k] : grid[i][j].can_for_d_white[k]
