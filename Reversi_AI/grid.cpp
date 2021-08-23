@@ -2,13 +2,15 @@
 
 GRID::GRID()
 {
+    count_direction.resize(8);
     init();
 }
 
 void GRID::init()
 {
     stat = 0;
-    for (int i = 0; i < 8; i++)can[i] = 0;
+    can = false;
+    for (int i = 0; i < 8; i++)count_direction[i] = 0;
     return;
 }
 
