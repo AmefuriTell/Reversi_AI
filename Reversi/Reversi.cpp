@@ -1,10 +1,8 @@
 #include <bits/stdc++.h>
-#include "GRID.hpp"
 #include "BOARD.hpp"
-
 
 int main()
 {
-    BOARD board;
-    board.Game(3);
+    BOARD reversi;
+    reversi.Game(3);
 }

@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include "GRID.hpp"
+#include "ReversiAI.hpp"
 
 class BOARD
 {
