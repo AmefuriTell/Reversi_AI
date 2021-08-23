@@ -1,3 +1,6 @@
+#ifndef GRID_H
+#define GRID_H
+
 #include <bits/stdc++.h>
 
 class GRID
@@ -7,21 +10,10 @@ public:
     bool can_black, can_white;
     std::vector<int> can_for_d_black, can_for_d_white;
 
-    GRID()
-    {
-        can_for_d_black.resize(8, 0);
-        can_for_d_white.resize(8, 0);
-        stat = 0;
-        can_black = false;
-        can_white = false;
-    }
+    GRID();
 
-    void ClearCan()
-    {
-        for(int i = 0; i < 8; i++)can_for_d_black[i] = 0;
-        for(int i = 0; i < 8; i++)can_for_d_white[i] = 0;
-        can_black = false;
-        can_white = false;
-    }
+    void ClearCan();
 private:
 };
+
+#endif
