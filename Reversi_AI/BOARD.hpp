@@ -1,8 +1,6 @@
-#ifndef BOARD_H
-#define BOARD_H
-
 #include <bits/stdc++.h>
 #include "GRID.hpp"
+#include "ReversiAI.hpp"
 
 class BOARD
 {
@@ -36,5 +34,3 @@ private:
 
     void UpdateCan();
 };
-
-#endif

@@ -2,7 +2,7 @@
 
 cd %~dp0
 
-g++ Reversi.cpp grid.cpp board.cpp -o Reversi.exe
+g++ Reversi.cpp GRID.cpp BOARD.cpp -o Reversi.exe
 Reversi.exe
 
 pause
