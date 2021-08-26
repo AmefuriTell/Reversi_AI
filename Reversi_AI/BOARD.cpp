@@ -162,10 +162,10 @@ void BOARD::PutDisk(std::pair<int, int> pos)
 
 void BOARD::PutDiskAI()
 {
-    PutDisk(AI());
+    PutDisk(RandomAI());
 }
 
-std::pair<int, int> BOARD::AI()
+std::pair<int, int> BOARD::RandomAI()
 {
     //とりあえずランダムに打つ。
     if(turn == 1)return can_black_v[rand() % can_black_v.size()];

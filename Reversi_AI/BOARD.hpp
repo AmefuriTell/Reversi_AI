@@ -32,7 +32,7 @@ private:
     void PutDisk(std::pair<int, int>);
     void PutDiskAI();
 
-    std::pair<int, int> AI();
+    std::pair<int, int> RandomAI();
 
     void UpdateCan();
 };
