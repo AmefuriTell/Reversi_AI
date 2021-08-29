@@ -21,7 +21,8 @@ int main()
         {
             for(int w = 0; w < GEN_NUM; w++)
             {
-                Reversi board(BlackAI.parents[b], WhiteAI.parents[w]);
+                //対戦させて、評価値を算出
+                Reversi board(&BlackAI.parents[b], &WhiteAI.parents[w]);
                 board.AIvsAI();
             }
         }
