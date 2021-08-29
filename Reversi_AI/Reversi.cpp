@@ -1,12 +1,12 @@
 #include "Reversi.hpp"
 
-Reversi::Reversi(Individual &B, Individual &W)
+Reversi::Reversi(Individual *B, Individual *W)
 {
-    BlackW = new Individual(B.length);
-    WhiteW = new Individual(W.length);
+    BlackW = new Individual(B->length);
+    WhiteW = new Individual(W->length);
 
-    BlackW = &B;
-    WhiteW = &W;
+    BlackW = B;
+    WhiteW = W;
 
     BlackNN = ANN(*BlackW);
     WhiteNN = ANN(*WhiteW);
