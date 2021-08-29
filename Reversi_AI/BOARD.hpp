@@ -13,7 +13,7 @@ public:
 
     void PrintBoard();
 
-private:
+//private: 派生クラスからアクセスしたいので。
     std::vector<std::vector<GRID>> grid;
     std::vector<std::pair<int, int>> can_black_v, can_white_v;
 
