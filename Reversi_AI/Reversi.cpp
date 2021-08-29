@@ -100,7 +100,7 @@ void Reversi::PutDiskAI()
     next = now;
 
     next.PutDisk(bufv[0]);
-    double maxscore = bufa.EvaluationFunction(this);
+    double maxscore = bufa.EvaluationFunction(*this);
     
     //これより高い手があれば随時更新
     for (int v = 1; v < bufv.size(); v++)
@@ -109,7 +109,7 @@ void Reversi::PutDiskAI()
         next = now;
 
         next.PutDisk(bufv[v]);
-        double score = bufa.EvaluationFunction(this);
+        double score = bufa.EvaluationFunction(*this);
         if(maxscore < score)
         {
             maxscore = score;
