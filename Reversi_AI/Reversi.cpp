@@ -1,12 +1,21 @@
 #include "Reversi.hpp"
 
-Reversi::Reversi(Individual b, Individual w)
+Reversi::Reversi(Individual &B, Individual &W)
 {
-    BlackW = b;
-    WhiteW = w;
+    BlackW = new Individual(B.length);
+    WhiteW = new Individual(W.length);
 
-    BlackNN = ANN(b);
-    WhiteNN = ANN(w);
+    BlackW = &B;
+    WhiteW = &W;
+
+    BlackNN = ANN(*BlackW);
+    WhiteNN = ANN(*WhiteW);
+}
+
+Reversi::~Reversi()
+{
+    delete(BlackW);
+    delete(WhiteW);
 }
 
 void AIvsAI()

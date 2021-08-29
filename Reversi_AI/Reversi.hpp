@@ -9,10 +9,12 @@
 class Reversi : public BOARD
 {
 public:
-    Individual BlackW, WhiteW;
+    Individual *BlackW, *WhiteW;
     ANN BlackNN, WhiteNN;
-    Reversi(Individual, Individual);
+    Reversi(Individual&, Individual&);
+    ~Reversi();
     void AIvsAI();
+    
 };
 
 #endif
